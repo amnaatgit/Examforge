@@ -1,0 +1,42 @@
+[
+  {
+    "id": "c2c49044-0af9-4ac3-a9ba-9a8631d6b590",
+    "name": "Demo Student",
+    "email": "student@demo.com",
+    "password": "$2a$10$tEYYvHyDC93TDh14MzNPJOHr9AYnBPGgCbgo4J9qnIgjDqLxghxR2",
+    "role": "student",
+    "createdAt": "2026-07-05T13:33:16.922Z"
+  },
+  {
+    "id": "6c91bf49-55de-4731-bf8f-bdb18c5a0f13",
+    "name": "amna1234",
+    "email": "amna@gmail.com",
+    "password": "$2a$10$F4jEVHK48FJGoFdFjIPf3elH.vyKmfk75c4qqZxBlZs5XnIHEckR2",
+    "role": "instructor",
+    "createdAt": "2026-07-05T13:34:53.249Z"
+  },
+  {
+    "id": "e9670767-cdd6-4337-801b-7db0403dc1d1",
+    "name": "Demo Instructor",
+    "email": "instructor@demo.com",
+    "password": "$2a$10$hNAaHxQGS3F4na7DoJ97xO.q0402fvvojr1XhcW6X2nwvxY4RXAWa",
+    "role": "instructor",
+    "createdAt": "2026-07-05T13:45:46.739Z"
+  },
+  {
+    "id": "83faaa37-020c-4167-8d72-6e7ba460a90a",
+    "name": "amna123456",
+    "email": "amna1@gmail.com",
+    "password": "$2a$10$EMo68zt8T59ete.P2c4bEeP9eiCpzuXdtRZXqs7MbQBn3SAjKEvLa",
+    "role": "instructor",
+    "createdAt": "2026-07-06T21:42:32.913Z"
+  },
+  {
+    "id": "bb1c7dcf-c834-449d-bba1-d8709aa95499",
+    "name": "ali khan",
+    "email": "ali@gmail.com",
+    "password": "$2a$10$t47sjJAnfVfAlU0MqlZCjut0hqLu2npicRksFz8eU0XJ4PQECfeeC",
+    "role": "student",
+    "createdAt": "2026-07-06T21:47:15.025Z"
+  }
+]

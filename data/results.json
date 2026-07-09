@@ -1,0 +1,50 @@
+[
+  {
+    "id": "c4c7afca-35c9-4b4d-b029-228f4edfe950",
+    "examId": "0dcbd85e-c653-4dad-bbd5-4b684d7f9479",
+    "examTitle": "midterm biology exam",
+    "studentId": "c2c49044-0af9-4ac3-a9ba-9a8631d6b590",
+    "studentName": "Demo Student",
+    "answers": [
+      {
+        "questionId": "ed62a176-9875-4288-9664-1a14721ca3b8",
+        "questionText": "what gas do plants use for photosynthesis",
+        "questionType": "mcq",
+        "studentAnswer": "1",
+        "correct": true,
+        "points": 1,
+        "explanation": ""
+      }
+    ],
+    "score": 1,
+    "totalPoints": 1,
+    "percentage": 100,
+    "passed": true,
+    "timeTaken": 14,
+    "submittedAt": "2026-07-06T21:54:41.986Z"
+  },
+  {
+    "id": "a33fb253-3382-48f0-80e9-159ab247e2ad",
+    "examId": "e5210f84-de6d-4aa7-b016-f767a0124cef",
+    "examTitle": "computer science",
+    "studentId": "c2c49044-0af9-4ac3-a9ba-9a8631d6b590",
+    "studentName": "Demo Student",
+    "answers": [
+      {
+        "questionId": "9e530473-1870-438d-bbff-0a01ff1d3298",
+        "questionText": "which language is the most used currently",
+        "questionType": "mcq",
+        "studentAnswer": "1",
+        "correct": false,
+        "points": 0,
+        "explanation": ""
+      }
+    ],
+    "score": 0,
+    "totalPoints": 1,
+    "percentage": 0,
+    "passed": false,
+    "timeTaken": 7,
+    "submittedAt": "2026-07-06T21:57:09.735Z"
+  }
+]

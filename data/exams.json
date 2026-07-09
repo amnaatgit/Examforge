@@ -1,0 +1,73 @@
+[
+  {
+    "id": "a4bd419f-d7a9-45bf-808a-52c126b081ac",
+    "title": "midterm biology exam",
+    "description": "",
+    "timeLimit": 30,
+    "passingScore": 60,
+    "instructorId": "6c91bf49-55de-4731-bf8f-bdb18c5a0f13",
+    "instructorName": "amna1234",
+    "questions": [],
+    "published": false,
+    "createdAt": "2026-07-05T13:35:36.954Z",
+    "updatedAt": "2026-07-05T13:35:36.954Z"
+  },
+  {
+    "id": "0dcbd85e-c653-4dad-bbd5-4b684d7f9479",
+    "title": "midterm biology exam",
+    "description": "biology exam mainly related to zoology",
+    "timeLimit": 30,
+    "passingScore": 60,
+    "instructorId": "83faaa37-020c-4167-8d72-6e7ba460a90a",
+    "instructorName": "amna123456",
+    "questions": [
+      {
+        "id": "ed62a176-9875-4288-9664-1a14721ca3b8",
+        "type": "mcq",
+        "text": "what gas do plants use for photosynthesis",
+        "options": [
+          "co2",
+          "o2",
+          "n02",
+          "h2"
+        ],
+        "correctAnswer": null,
+        "correct": 1,
+        "points": 1,
+        "explanation": ""
+      }
+    ],
+    "published": true,
+    "createdAt": "2026-07-06T21:44:18.191Z",
+    "updatedAt": "2026-07-06T21:54:14.874Z"
+  },
+  {
+    "id": "e5210f84-de6d-4aa7-b016-f767a0124cef",
+    "title": "computer science",
+    "description": "",
+    "timeLimit": 30,
+    "passingScore": 60,
+    "instructorId": "e9670767-cdd6-4337-801b-7db0403dc1d1",
+    "instructorName": "Demo Instructor",
+    "questions": [
+      {
+        "id": "9e530473-1870-438d-bbff-0a01ff1d3298",
+        "type": "mcq",
+        "text": "which language is the most used currently",
+        "options": [
+          "c++",
+          "python",
+          "java",
+          "c#"
+        ],
+        "correctAnswer": null,
+        "correct": 2,
+        "points": 1,
+        "explanation": ""
+      }
+    ],
+    "published": true,
+    "createdAt": "2026-07-06T21:55:43.700Z",
+    "updatedAt": "2026-07-06T21:56:45.852Z"
+  }
+]
