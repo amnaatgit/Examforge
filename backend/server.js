@@ -1,13 +1,13 @@
 require('dotenv').config();
-const express     = require('express');
-const cors        = require('cors');
-const path        = require('path');
-const authRoutes  = require('./routes/auth');
-const examRoutes  = require('./routes/exams');
+const express = require('express');
+const cors = require('cors');
+const path = require('path');
+const authRoutes = require('./routes/auth');
+const examRoutes = require('./routes/exams');
 const resultRoutes = require('./routes/results');
-const { initDB }  = require('./db');
+const { initDB } = require('./db');
 
-const app  = express();
+const app = express();
 const PORT = process.env.PORT || 3000;
 
 // ── Security headers ──────────────────────────────────────────────────────────
@@ -22,8 +22,8 @@ app.use(express.json({ limit: '1mb' }));
 app.use(express.static(path.join(__dirname, '../frontend/public')));
 
 // ── API Routes ────────────────────────────────────────────────────────────────
-app.use('/api/auth',    authRoutes);
-app.use('/api/exams',   examRoutes);
+app.use('/api/auth', authRoutes);
+app.use('/api/exams', examRoutes);
 app.use('/api/results', resultRoutes);
 
 // ── 404 for unknown API routes ────────────────────────────────────────────────
@@ -43,11 +43,22 @@ app.use((err, req, res, next) => {
   res.status(err.status || 500).json({ error: 'An unexpected error occurred.' });
 });
 
-initDB().then(() => {
-  app.listen(PORT, () => {
-    console.log(`\n🎓 ExamForge running at http://localhost:${PORT}\n`);
+// ── Startup ────────────────────────────────────────────────────────────────────
+// When run directly (local dev / traditional host), initialize the DB and
+// start listening on a port. When imported (e.g. by Vercel's serverless
+// runtime), just make sure the DB is initialized and export the app instead
+// of calling listen().
+if (require.main === module) {
+  initDB().then(() => {
+    app.listen(PORT, () => {
+      console.log(`\n🎓 ExamForge running at http://localhost:${PORT}\n`);
+    });
+  }).catch(err => {
+    console.error('Failed to initialize database:', err);
+    process.exit(1);
   });
-}).catch(err => {
-  console.error('Failed to initialize database:', err);
-  process.exit(1);
-});
+} else {
+  initDB().catch(err => console.error('Failed to initialize database:', err));
+}
+
+module.exports = app;
